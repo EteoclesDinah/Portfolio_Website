@@ -6,18 +6,39 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!--for x mark in minimized screen (font swesome 4cdn)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
-    <div class="navbar" >
+    <div class="navbar" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+
         <a href="index.html" class="drop content">HOME</a>
         <a href="about.html" class="drop content">ABOUT</a>
         <a href="skills.html" class="drop content">SKILLS</a>
         <a href="education.html" class="drop content">EDUCATION</a>
         <a href="projects.html" class="drop content">PROJECTS</a>
         <a href="contact.html" class="drop content">CONTACT</a>
+
+        
     </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
     
     </div>
+
+    <!--javascript for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
