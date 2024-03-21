@@ -12,12 +12,57 @@
 <body>
     <div class="container">
         <div id="headerContainer"></div>
+
+        <div class="study">
+            <div class="title">
+                <h2>Academic Qualification</h2>
+            </div>
+
+            <div class="flip">
+                <div class="front" style="background-image: url(/images/eec.jpg);">
+                    <h1 class="frontText1">Bachelors</h1>
+                </div>
+
+                <div class="back" style="background-image: url(/images/eeclogo.jpg);">
+                    <h1 class="backText1">Everest Engineering College</h1>
+                    <h2 class="backText2">BE Computer <br> 2019-present</h2>
+                </div>
+            </div>
+
+            <div class="flip">
+                <div class="front" style="background-image: url(/images/dav.jpg);">
+                    <h1 class="frontText1">+2</h1>
+                </div>
+
+                <div class="back" style="background-image: url(/images/davlogo.jpg);">
+                    <h1 class="backText1">DAV College</h1>
+                    <h2 class="backText2">Science (Biology) <br> 2018-2019</h2>
+                </div>
+            </div>
+
+            <div class="flip">
+                <div class="front" style="background-image: url(/images/nsps.jpg);">
+                    <h1 class="frontText11">Primary and Secondary School Level</h1>
+                </div>
+
+                <div class="back" style="background-image: url(/images/nspslogo.jpg);">
+                    <h1 class="backText1">New Star Pole School</h1>
+                    <h2 class="backText2"> <br> 2010-2017</h2>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div id="footerContainer"></div>
     </div>
 
     <script>
         $(function() {
             //load header
             $('#headerContainer').load('header.html');
+
+            $('#footerContainer').load('footer.html');
         });
     </script>
 </body>
