@@ -12,7 +12,7 @@
     --backdrop-filter: blur(5px); 
 }
 body {
-    background: url(images/background2.jpg) no-repeat;
+    background: url(images/background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -328,99 +328,136 @@ body {
     margin-bottom: 1em;
     margin-top: 2em;
     width: 700px;
-    >.front{
+    height: 420px;
+    >.front .f{
         display: block;
-        color: white;
+        color: rgb(73, 65, 65);
         width: inherit;
         background-size: cover!important;
         background-position: center!important;
+        width: 700px;
         height: 420px;
-        padding: 3em 2em;
+        padding: 4em 2em 5em 2em;
         background: #313131;
         border-radius: 10px;
-        p {
-          font-size: 0.9125rem;
-          line-height: 160%;
-          color: #999;
-        }
     }
-    >.back {
+    >.back .b{
       display: block;
-      color: rgb(255, 255, 255);
+      color: rgb(65, 54, 54);
       width: inherit;
       background-size: cover!important;
       background-position: center!important;
+      width: 700px;
       height: 420px;
-      padding: 2.7em 1em;
-      background: #ffffff;
+      padding: 4em 2em 5em 2em;
+      background: #727272;
       border-radius: 10px;
-      p {
-        font-size: 1.1rem;
-        line-height: 150%;
-        color: #d4d4d4;
-      }
+      
     }
 }
 
 /* for the flip effect*/ 
 .flip {
     position: relative;
-    >.front,
-    >.back {
+    >.front .f,
+    >.back .b{
         display: block;
         transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
         transition-duration: 1s;
         transition-property: transform, opacity;
     }
-    >.front {
+    >.front .f{
         transform: rotateY(0deg);
+        
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 700px;
+        height: 420px;
     }
-    >.back {
+    >.back .b{
         position: absolute;
         opacity: 0;
         top: 0px;
         left: 0px;
-        width: 100%;
-        height: 100%;
+        width: 700px;
+        height: 420px;
         transform: rotateY(-180deg);
         
     }
     &:hover {
-        >.front {
+        >.front .f{
             transform: rotateY(180deg);
         }
-        >.back {
+        >.back .b{
             opacity: 1;
             transform: rotateY(0deg);
         }
     }
     &.flip-vertical {
-        >.back {
+        >.back .b{
             transform: rotateX(-180deg);
         }
         &:hover {
-            >.front {
+            >.front .f{
                 transform: rotateX(180deg);
             }
-            >.back {
+            >.back .b{
                 transform: rotateX(0deg);
             }
         }
     }
 }
 
-.flip .frontText1{
-    text-align: center;
+.flip .front .frontText1{
     color: rgb(114, 7, 89);
-}
-
-
-.flip .backText1, .backText2 {
-    text-align: end;
-    color: #d5cfcf;
-}
-
-.flip .frontText11{
+    position: relative;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #fff;
+    z-index: 1;
+
+}
+
+
+.flip .back .backText1, .backText2 {
+    color: #d5cfcf;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    top: 60%;
+    font-size: 20px;
+}
+
+/*
+::-webkit-details-marker{
+    float: right;
+    margin-top: 3px;
+ }
+*/
+
+ details summary::-webkit-details-marker {
+    color: red; 
+}
+
+
+ details summary{
+    color: rgb(163, 49, 79);
+    font-size: 1.6rem;
+    text-decoration: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    outline: none;
+    
+ }
+ summary {
+    position: relative;
+}
+
+ .fa-chevron-down {
+    position: absolute;
+    bottom: 0;
 }
