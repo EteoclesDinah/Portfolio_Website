@@ -361,11 +361,19 @@ body {
     padding-top: 6cm;
 }
 
+.study p{
+    color: aqua;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 30px;
+    margin-bottom: 1cm;
+}
+
 .study .title{
     font-weight: bolder;
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(4, 122, 172);
+    color: rgb(0, 164, 234);
 
 }
 
