@@ -336,6 +336,11 @@ body {
 }
 
 
+/********************************************************skills*********************************************************************/
+.skills{
+    display: flex;
+    padding: 6cm;
+}
 
 
 
@@ -524,3 +529,127 @@ details img{
     justify-content: center;
     align-items: center;
 }
+
+/**********************************************projects*****************************************************/
+
+.projects{
+    padding-top: 6cm;
+}
+
+/*******************************contacts*****************************************************************/
+
+.contacts{
+    padding-top: 6cm;
+}
+
+.contacts h1{
+    color: rgb(17, 2, 226);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contacts p{
+    margin: 0.5cm 1.5cm 1cm 1.5cm;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(142, 218, 246);
+    line-height: 30px;
+}
+
+.contacts .subTitle p:nth-child(1){
+    color: rgb(9, 9, 208);
+    margin-bottom: 0%;
+    margin-left: 2.5cm;
+}
+
+.contacts .subTitle p:nth-child(2){
+    margin-left: 3cm ;
+    color: rgb(236, 236, 236);
+    background-color: rgb(90, 133, 170);
+    font-weight: bolder;
+    width: 5cm;
+    text-decoration: none;
+    padding: 1cm;
+    box-shadow: inset 20px 20px 20px rgba(20, 19, 19, 0.5), 25px 35px 20px rgba(0, 0, 0, 0.5),25px 30px 30px  rgba(0, 0, 0, 0.5),
+                inset -20px -20px 25px rgba(255,255,255,0.9);
+    transition: 0.5s ease-in-out;
+    border-radius: 46% 54% 56% 44% / 52% 75% 25% 48%  ;
+}
+
+
+.contacts .subTitle .drop::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 600px;
+    left: 350px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+.contacts .subTitle .drop::after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 610px;
+    left: 360px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+.contacts .subTitle .drop:hover{
+    border-radius: 50%;
+    background-color: rgb(255, 9, 198);
+}
+
+.socialMediaIcons p{
+    color: rgb(0, 0, 223);
+    margin-bottom: 0%;
+    margin-left: 2.5cm;
+}
+
+.socialMediaIcons a{
+    display: inline-block;
+    margin-left: 3cm ;
+    margin-bottom: 0.5cm;
+    margin-top: 1cm;
+    color: rgb(116, 2, 2);
+    background-color: rgb(90, 133, 170);
+    font-weight: bolder;
+    font-size: 30px;
+    width: 3cm;
+    text-decoration: none;
+    padding: 1cm;
+    box-shadow: inset 20px 20px 20px rgba(20, 19, 19, 0.5), 25px 35px 20px rgba(0, 0, 0, 0.5),25px 30px 30px  rgba(0, 0, 0, 0.5),
+                inset -20px -20px 25px rgba(255,255,255,0.9);
+    transition: 0.5s ease-in-out;
+}
+
+.socialMediaIcons a:nth-of-type(1) {
+    border-radius: 62% 38% 55% 45% / 52% 57% 43% 48% ;
+}
+
+.socialMediaIcons a:nth-of-type(2) {
+    border-radius: 77% 23% 72% 28% / 46% 47% 53% 54% ;
+}
+
+.socialMediaIcons a:nth-of-type(3) {
+    border-radius: 59% 41% 72% 28% / 46% 47% 53% 54% ;
+}
+
+.socialMediaIcons a:nth-of-type(4) {
+    border-radius: 71% 29% 58% 42% / 46% 47% 53% 54% ;
+}
+
+.socialMediaIcons a:nth-of-type(5) {
+    border-radius: 71% 29% 24% 76% / 46% 47% 53% 54% ;
+}
+
+.socialMediaIcons a:hover{
+    border-radius: 50%;
+    background-color: rgb(255, 9, 198);
+}
+
