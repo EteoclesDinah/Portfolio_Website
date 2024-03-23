@@ -443,21 +443,40 @@ body {
 }
 
 
- details summary{
-    color: rgb(163, 49, 79);
-    font-size: 1.6rem;
-    text-decoration: none;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    outline: none;
-    
- }
- summary {
-    position: relative;
+details{
+    display: inline-block;
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+ 
 }
 
- .fa-chevron-down {
-    position: absolute;
-    bottom: 0;
+details .text{
+    color: whitesmoke;
+    margin: 1cm ;
+    font-size: 20px;
+}
+
+details h1{
+    font-size: 30px;
+    color: rgb(0, 255, 255);
+}
+
+details h3{
+    font-size: 25px;
+    color: rgb(61, 167, 167);
+    margin-left: 2cm;
+    margin-top: 0.5cm;
+}
+
+/* Style the summary and p elements within the first details element */
+details:first-of-type summary {
+    color: red;
+    font-size: 20px;
+    margin-left: 3cm;
+    margin-top: 0.5cm ;
+}
+
+details img{
+    justify-content: center;
+    align-items: center;
 }
