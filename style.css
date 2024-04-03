@@ -12,6 +12,7 @@
     --backdrop-filter: blur(5px); 
     --lightblue: rgb(68, 231, 231);
 }
+
 body {
     background: url(images/background.jpg) no-repeat;
     background-size: cover;
@@ -24,9 +25,13 @@ body {
 .container {  
     border-radius: .8rem;
     max-width: 1300px;
-    margin: 2rem auto; 
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,1);   
+
+    margin-top: 0;
+    margin-left: 5rem;
+   
 }
+
 /*removed backdrop-filter to make the nav bar fixed */
 
 .headerContainer{
@@ -35,7 +40,7 @@ body {
     backdrop-filter: blur(5px); 
     z-index: 1000;
     position: fixed;
-    width: 1300px;
+    width: 1150px;
     border-radius: 5px;
 }
 
@@ -531,7 +536,9 @@ details:first-of-type summary {
 
 details img{
     justify-content: center;
-    align-items: center;
+    width: 600px;
+    height: 800px;
+    margin-left: 8cm;
 }
 
 
